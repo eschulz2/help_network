@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :visitors, only: [:new, :create]
+  devise_for :users
+  resources :users
+  resources :visitors, only: [:new, :create, :index]
   root to: 'visitors#new'
 end

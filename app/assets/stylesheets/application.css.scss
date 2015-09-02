@@ -13,3 +13,102 @@
  *= require_tree .
  *= require_self
  */
+
+.hero-spacer {
+	margin-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+
+}
+
+ .hello {
+   background-color: #CFF2CF;
+   padding-bottom: 14px;
+   padding-left: 30px;
+   padding-right: 30px;
+   border-radius: 7px;
+   margin-bottom: 5px;
+ }
+
+ .normalbox {
+ 	clear: both;
+ 	background-color: #F2E1EA;
+ 	padding-bottom: 14px;
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+ 	border-radius: 7px;
+ 	margin-bottom: 5px;
+ }
+
+ footer {
+   clear: both;
+   height: 200px;
+
+ }
+
+ .pagebottom {
+   background-color: #F8F8FA;
+ }
+
+ p {
+   color: #555861;
+ }
+
+ .navbar-inverse {
+   margin: 0px;
+   background-color: #555861;
+   border: 5px solid white;
+
+
+ }
+
+ .navbar-collapse {
+   background-color: #D3E2E8;
+ }
+
+ header {
+
+ }
+
+ section {
+   margin-top: 0px;
+ }
+
+ main {
+   padding: 20px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   background-color: white;
+   margin: 0px;
+ }
+
+.ourbuttons {
+	clear: both;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #05AFF2;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #05AFF2;
+}
+
+.greeting {
+	padding: 20px;
+}
+
+.text-center {
+	margin: 0px;
+}
+
+h2 {
+  color: #333333;
+}
+
+h3 {
+  color: #333333;
+
+}

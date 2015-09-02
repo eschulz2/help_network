@@ -1,0 +1,14 @@
+<table class="table table-striped">
+	<tbody>
+		<% @visitors.each do |x| %>
+		<tr>
+			<td>
+				<% unless x.name == nil %>
+				  <li><%= x.name %></li>
+		    <% end %>
+		    <li><%= x.email%></li>
+			</td>
+		<% end %>
+	</tr>
+	</tbody>
+</table>

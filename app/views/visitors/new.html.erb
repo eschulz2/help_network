@@ -1,15 +1,76 @@
 <section>
-  <div class="column">
-    <h2>Stay in touch.</h2>
-  </div>
-  <div class="column">
-    <div class="form-centered">
-      <%= simple_form_for @visitor do |f| %>
-        <%= f.error_notification %>
-        <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
-        <br/>
-        <%= f.button :submit, "Sign up for the mailing list", :class => "submit" %>
-      <% end %>
+
+  <header class="jumbotron hero-spacer">
+              <h1>A Warm Welcome!</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+              <p><a href="/#student">I Want to Learn!</a>
+              <p><a href="/#teacher">I Can Teach!</a>
+              </p>
+          </header>
+<!--   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 greeting">
+    <h3 class="text-center">Center aligned text.</h3>
+  </div> -->
+
+
+  <div class="hello col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+      <h3>Center aligned text.</h3>
+      <p>This is where content will go.</P>
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <h2>Stay in touch.</h2>
+      <br>
+        <!-- <form> -->
+
+        <div class="form-group" id="student">
+          <%= simple_form_for @visitor do |f| %>
+            <%= f.error_notification %>
+            <%= f.input :name, label: false, :placeholder => 'Your name' %>
+            <br/>
+            <%= f.input :email, label: false, :placeholder => 'Your email address' %>
+            <!-- <br/> -->
+            </div>
+            <div class="ourbuttons">
+              <%= f.button :submit, "Submit", :class => "btn-lg btn-default" %>
+            </div>
+          <% end %>
+      
     </div>
   </div>
+  <div class="normalbox col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+      <h3>Center aligned text.</h3>
+      <p>This is where content will go.</P>
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <h2>Stay in touch.</h2>
+      <br>
+        <!-- <form> -->
+
+        <div class="form-group" id="student">
+          <%= simple_form_for @visitor do |f| %>
+            <%= f.error_notification %>
+            <%= f.input :name, label: false, :placeholder => 'Your name' %>
+            <br/>
+            <%= f.input :email, label: false, :placeholder => 'Your email address' %>
+            <!-- <br/> -->
+            </div>
+            <div class="ourbuttons">
+              <%= f.button :submit, "Submit", :class => "btn-lg btn-default" %>
+            </div>
+          <% end %>
+      
+    </div>
+  </div>
+
+  <footer class="pagebottom jumbotron hero-spacer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+          </footer>
+
+
+
 </section>
