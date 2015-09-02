@@ -7,6 +7,12 @@
 				  <li><%= x.name %></li>
 		    <% end %>
 		    <li><%= x.email%></li>
+		    <% unless x.interest == nil %>
+			    <li><%= x.interest%></li>
+		    <% end %>
+		    <% unless x.city == nil %>
+			    <li><%= x.city%></li>
+		    <% end %>
 			</td>
 		<% end %>
 	</tr>
