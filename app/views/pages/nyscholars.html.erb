@@ -1,0 +1,48 @@
+
+<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-9 col-xs-12">
+
+
+<h4>
+
+  Opportunities for all New Yorkers 
+</h4>
+ 
+<h5>
+  A Scholarship Sponsored by
+  
+</h5>
+<p>
+  <strong>Description:</strong>
+  The winners of this scholarship will get to work along with the sponsors to design and build their own product.  The goal is to use technology to improve the lives of all New Yorkers, especially the underprivileged.  How can a web or mobile app be used to benefit a community of millions with access to computers and mobile phones?
+  
+	<p>Applicants for this scholarship do not need any previous knoweldge of software development, but they must be willing to work hard to learn web development in a 30 day apprenticeship funded by this scholarship.  If this sounds like you, and you have a great idea to help others, please feel free to apply!  Your idea for a new app can be about anything so long as it's legal and respectful of others.
+
+	<p>To apply, Sign In using your Twitter account and complete the form on this page.  Create a new Twitter if you don't already have one.  We will never tweet from or manipulate your Twitter profile.
+		<br>
+		<br>
+
+  
+  <% if user_signed_in? %>
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+
+			<%= simple_form_for @visitor do |f| %>
+
+			  <%= f.hidden_field :email, :value => current_user.email %>
+			  <%= f.input :idea, as: :text, label: "Introduce yourself and share a little about your idea.  Limit of 300 words please", :input_html => {:rows => 8} %>
+			  <%= f.hidden_field :interest, :value => 'teacher' %>
+
+			  <%= f.hidden_field :creator_id, :value => current_user.id %>
+			  <%= f.button :submit %>
+			<% end %>
+		</div>
+	<% else %>
+
+		<p><%= link_to "Sign In with Twitter" %> 
+  <% end %>
+
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<br>
+	<br>
+</div>

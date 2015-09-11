@@ -1,0 +1,27 @@
+<% content_for :title do %>Chicago<% end %>
+<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-xs-12">
+<h3>Learning in Chicago</h3>
+
+<p>You can express interest in one or several listed courses, and then it's up to the teacher to contact you and get you enrolled.</p>
+</div>
+<br>
+
+<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-xs-12">
+	<table class="table table-striped">
+		<tbody>
+			<% @courses.each do |x| %>
+
+				<tr>
+					<td>
+
+				    <li><h4><%= link_to x.title, course_path(id: x.id) %></li>
+
+					</td>
+
+				
+				</tr>
+
+			<% end %>
+		</tbody>
+	</table>
+</div>

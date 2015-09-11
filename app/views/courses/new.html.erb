@@ -1,0 +1,10 @@
+<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+	<%= simple_form_for @course do |f| %>
+	  <%= f.input :title %>
+	  <%= f.input :location, collection: ["Austin", "Chicago", "Madison WI", "New York City", "Other"], label: "City" %>
+	  <%= f.input :description, as: :text, :input_html => {:rows => 8} %>
+	  <%= f.input :link, :placeholder => 'Optional' %>
+	  <%= f.hidden_field :creator_id, :value => current_user.id %>
+	  <%= f.button :submit %>
+	<% end %>
+</div>

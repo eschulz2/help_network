@@ -24,31 +24,59 @@
 }
 
  .hello {
-   background-color: #CFF2CF;
+
+   background-color: white;
    padding-bottom: 14px;
    padding-left: 30px;
    padding-right: 30px;
-   border-radius: 7px;
+
    margin-bottom: 5px;
-   border: 2px solid white;
+   border: 7px solid #D8F2D5;
+   border-bottom: 0px;
+   border-top: 0px;
+   border-right: 12px solid white;
  }
 
  .normalbox {
 
- 	background-color: #E4EEFF;
+ 	background-color: white;
  	padding-bottom: 14px;
  	padding-left: 30px;
  	padding-right: 30px;
- 	border-radius: 7px;
+
  	margin-bottom: 5px;
-   border: 2px solid white;
+   border: 7px solid #E4EEFF;
+   border-bottom: 0px;
+   border-top: 0px;
+   border-right: 12px solid white;
 
 
+ }
+
+ #helloback {
+   background-color: #D8F2D5;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-right: 10px;
+   padding-left: 10px;
+ }
+
+ #normalback {
+   background-color: #E4EEFF;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-right: 10px;
+   padding-left: 10px;
  }
 
 
  .innercontainer {
    margin-left: 5px;
+ }
+
+ #homehr {
+   height: 3px;
+   background: #555861;
  }
 
  footer {
@@ -65,6 +93,11 @@
    color: #555861;
  }
 
+ coursedes {
+   margin-left: 20px;
+
+ }
+
  .navbar-inverse {
    margin: 0px;
    background-color: #555861;
@@ -77,9 +110,15 @@
    background-color: #D3E2E8;
  }
 
- header {
+ .office {
+    height: 300px;
 
  }
+
+ #largerheader {
+   height: 250px;
+ }
+
 
  section {
    margin-top: 0px;
@@ -107,7 +146,9 @@ label.collection_radio_buttons {
    margin-right: 3px;
 }
 
-p { text-indent: 20px; }
+p.home { text-indent: 16px; }
+
+#coursep { text-indent: 3px; }
 
 .radiobuttons {
    height: 25px;
@@ -115,7 +156,7 @@ p { text-indent: 20px; }
 
 .navbar-inverse .navbar-brand {
 	color: #05AFF2;
-   margin-right: 5px;
+   margin-right: 3px;
 }
 
 .greeting {
@@ -127,10 +168,39 @@ p { text-indent: 20px; }
 }
 
 h2 {
-  color: #333333;
+  color: #555861
 }
 
 h3 {
-  color: #333333;
+  color: #555861
 
+}
+
+h4 {
+  color: #555861;
+  line-height: 2.0;
+
+}
+
+h5 {
+  color: #555861;
+  line-height: 2.0;
+
+}
+
+#citylist {
+   margin-top: 10px;
+}
+
+.citylist {
+   padding-left: 0px;
+   padding-right: 0px;
+}
+
+li {
+   list-style-type: none;
+}
+
+#scholars {
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }

@@ -1,11 +1,19 @@
 <section>
 
-  <header class="jumbotron hero-spacer">
-              <h2>A Warm Welcome!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+  <header id="largerheader" class=" hidden-xs jumbotron hero-spacer">
+      <h2>A Warm Welcome!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
 
-              </p>
-          </header>
+      </p>
+      <h4 id="scholars"><%= link_to "Current Scholarships", scholarships_path %>
+  </header>
+
+  <header id="smallerheader" class=" hidden-sm hidden-md hidden-lg jumbotron hero-spacer">
+      <h2>A Warm Welcome!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+
+      </p>
+  </header>
 <!--   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 greeting">
     <h3 class="text-center">Center aligned text.</h3>
   </div> -->
@@ -13,28 +21,46 @@
 
 
   <div class="hello col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <div col-md-12>
+    <div >
 
-      <h3>Learn web development.</h3>
-      <p>Courses found on NAMEOFTHING are created and taught by web developers who love to teach their skills to others.
+      <h3 id="helloback" class="hidden-xs">Learn web development</h3>
+      <h4 id="helloback" class="hidden-sm hidden-md hidden-lg">Learn web development</h4>
+      <p class="home">Courses found on NAMEOFTHING are created and taught by web developers who love to teach their skills to others.
 
-      <p>Most courses found on this site are for students with little or no web development experience.  All you need is a strong desire to learn, although a laptop is also usually required.
+      <p class="home">Most courses found on this site are for students with little or no web development experience.  All you need is a strong desire to learn, although a laptop is also usually required.
 
-      <p>You can express interest in one or several listed courses, and then it's up to the teacher to contact you and get you enrolled. 
 
-      <p>The integrity of each course on NAMEOFTHING is very important to us, and sometimes we choose to interview teachers before allowing them to post a course on this site.  For this reason, we are currently only allowing courses in Chicago and New York City. </P>
 
-        <h4><a href="/">View Current Courses</a>
+      <p class="home">The integrity of each course on NAMEOFTHING is very important to us, and sometimes we choose to interview teachers before allowing them to post a course on this site.  For this reason, we are currently only allowing courses in a limited number of cities. </P>
+
+        <h4  >Learn in these cities:</h4>
+
+        <div class="citylist col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <!-- <h4 id="citylist"><a href="/austin">Austin</a><br> -->
+        <h4 id="citylist"><a href="/chicago">Chicago</a>
+        </div>
+
+        <div class="citylist col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <!-- <h4 id="citylist"><a href="/madisonwi">Madison, WI</a><br> -->
+        <h4 id="citylist"><a href="/nyc">NYC</a>
+        </div>
+
+        
 
 
       
     </div>
   </div>
-  <div class="normalbox col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <div class=" col-md-12">
 
-      <h3>Create and teach a course. </h3>
-      <p>If you are interested in creating your own course, please complete this form and we'll contact you shortly to help you get started.  Get paid to teach the craft that you love!  </P>
+  <div class="normalbox col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <hr id="homehr" class="hidden-sm hidden-md hidden-lg">
+    <div >
+
+
+      <h3 id="normalback" class="hidden-xs">Teach a course </h3>
+
+      <h4 id="normalback" class="hidden-sm hidden-md hidden-lg">Teach a course </h4>
+      <p class="home">If you are interested in creating your own course, please complete this form and we'll contact you within three business days to get you started.  Get paid to teach the craft that you love!  Note:  Your info will never be shared with any other party.  </P>
 
    <!--  </div>
     <div > -->
@@ -50,7 +76,7 @@
             <!-- <br/> -->
 
             <%= f.input :email, label: false, :placeholder => 'Your email address' %>
-            <%= f.collection_radio_buttons :city, [['Chicago'] ,['NYC']],:first, :last, :class => "radiobuttons" %>
+            <%= f.input :city, collection: ["Austin", "Chicago", "Madison WI", "New York City", "Other"], label: "City" %>
             <%= f.hidden_field :interest, :value => 'teacher' %>
             <!-- <br/> -->
             </div>

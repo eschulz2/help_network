@@ -5,6 +5,9 @@
 			<td>
 
 		    <li><%= x.email%></li>
+        <% unless x.content == nil %>
+    	    <li><%= simple_format(x.content) %></li>
+        <% end %>
 			</td>
 		<% end %>
 	</tr>

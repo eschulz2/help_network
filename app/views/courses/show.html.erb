@@ -1,0 +1,26 @@
+
+<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-9 col-xs-12">
+
+	<% if user_signed_in? && @course.creator.id == current_user.id %>
+	  <%= link_to "Edit this Course", edit_course_path(id: @course.id) %>
+  <% end %>
+<h4>
+
+  <%= @course.title %>
+</h4>
+ 
+<h5>
+
+  <%= link_to @course.location, chicago_path %>
+</h5>
+<p>
+  <strong>Description:</strong>
+  <%= simple_format(@course.description) %>
+</p>
+<% unless @course.link == nil || @course.link == "" %>
+	<h5>
+<!-- 	  <strong>Link:</strong> -->
+	  <%= link_to "Instructor's Link", "//#{@course.link}", :target => "_blank" %>
+	</h5>
+<% end %>
+</div>
